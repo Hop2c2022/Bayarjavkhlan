@@ -1,0 +1,77 @@
+.App {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  height: 10vh;
+}
+.input {
+  width: 30vw;
+  height: 4vh;
+  border-radius: 5px 0px 0px 5px;
+  border: 1px solid rgb(194, 194, 194);
+}
+.button {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3vw;
+  border-radius: 0px 5px 5px 0px;
+  height: 4.4vh;
+  border: 0px solid black;
+  font-size: 50px;
+  font-weight: bolder;
+  background-color: rgb(19, 104, 153);
+}
+.app2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 33vw;
+  border-bottom: 1px solid rgb(189, 189, 189);
+  height: 5vh;
+}
+.step {
+  display: flex;
+  width: 80%;
+  gap: 10px;
+  font-size: large;
+  font-weight: bold;
+}
+.al {
+  width: 20%;
+  justify-content: space-between;
+}
+button {
+  width: 50px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  border: 0ch;
+  border-radius: 5px;
+  color: white;
+}
+.gren {
+  background-color: rgb(84, 218, 84);
+}
+.gren:hover {
+  background-color: rgb(16, 77, 16);
+}
+.red:hover {
+  background-color: rgb(187, 129, 129);
+}
+.red {
+  background-color: rgb(241, 75, 75);
+}
+.bobo {
+  text-decoration: line-through;
+}
