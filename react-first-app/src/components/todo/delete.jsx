@@ -7,7 +7,6 @@ export const Delete = ({ button, i, setButton }) => {
 
   const ustgagc = () => {
     const a = button.filter((to) => to.id !== i);
-    console.log("after: ", a);
 
     setButton(a);
   };
