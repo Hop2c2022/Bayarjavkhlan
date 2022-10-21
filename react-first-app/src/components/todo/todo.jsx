@@ -1,15 +1,30 @@
 import React from "react";
 import { Delete } from "./delete";
 import { Done } from "./done";
+import { useState } from "react";
 
 export const Todo = ({ button, setButton, input }) => {
+  const [search, setSearch] = useState(button);
+  const searcher = (inputValue) => {
+    if (inputValue == "") {
+      setSearch([]);
+    } else {
+      setSearch(
+        button.filter((task) => {
+          return task.text.toLowerCase().includes(inputValue.toLowerCase());
+        })
+      );
+    }
+  };
   return (
     <div>
-      {/* style={{
-              textDecoration: isActive ? "underline" : "",
-            }} */}
+      <input
+        className="input"
+        onChange={(e) => searcher(e.target.value)}
+        type="text"
+      />
 
-      {button.map((el) => {
+      {(search[0] ? search : button).map((el) => {
         return (
           <div className="main" key={el.id}>
             <div className="step">

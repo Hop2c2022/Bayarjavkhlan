@@ -83,3 +83,14 @@ input:focus {
     transform: rotate(360deg);
   }
 }
+.fButton {
+  width: 70px;
+}
+.fDiv {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.FBUTTON {
+  width: 165px;
+}

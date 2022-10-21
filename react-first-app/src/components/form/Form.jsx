@@ -43,9 +43,17 @@ export const Form = () => {
         onChange={emailchanger}
         type="text"
       />
-      <button type="submit">Register</button>
-      <button onClick={() => bebe()}>Name</button>
-      <button onClick={() => baba()}>Email</button>
+      <div className="fDiv">
+        <button className="FBUTTON" type="submit">
+          Register
+        </button>
+        <button className="fButton" onClick={() => bebe()}>
+          Name
+        </button>
+        <button className="fButton" onClick={() => baba()}>
+          Email
+        </button>
+      </div>
     </form>
   );
 };

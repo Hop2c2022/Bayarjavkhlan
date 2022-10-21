@@ -1,16 +1,25 @@
-export const Search = ({ setSearch, search, button, setButton }) => {
-  const searcher = (e) => {
-    setSearch(e.target.value);
-  };
-  const filterg = () => {
-    // const a = button.filter((to) => to.id !== i);
-    const hu = button.filter((e) => e.text == search);
-    setButton(hu);
-  };
-  return (
-    <div>
-      <input className="input" onChange={searcher} type="text" />
-      <button onClick={() => filterg()}>Search</button>
-    </div>
-  );
+import { useState } from "react";
+export const Search = ({ button, setButton }) => {
+  return; // <div className="App">
+
+  //   {search.map((el) => {
+  //     <div className="main" key={el.id}>
+  //       <div className="step">
+  //         <div>{el.id + 1}) </div>
+  //         {el.checked == true ? (
+  //           <div
+  //             style={{
+  //               textDecoration: "line-through",
+  //             }}
+  //             id={el.id}
+  //           >
+  //             {el.text}{" "}
+  //           </div>
+  //         ) : (
+  //           <div id={el.id}>{el.text}</div>
+  //         )}
+  //       </div>
+  //     </div>;
+  //   })}
+  // </div>
 };
