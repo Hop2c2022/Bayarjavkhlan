@@ -1,98 +1,79 @@
 body {
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-size: 2vw;
-}
-.App {
-  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 form {
-  width: 30vw;
-  height: 60vh;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
-  gap: 30px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  border-radius: 10px;
-}
-button {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  width: 100px;
+  background: url("../../public/bk.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  gap: 4%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.S-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  color: white;
+}
+.S-text {
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+}
+.S-input {
+  width: 17vw;
   height: 45px;
-  font-size: large;
-  font-weight: bold;
-  border-radius: 3px;
+  background: #224957;
+  border-radius: 10px;
   border: none;
   color: white;
-  background-color: black;
-  cursor: pointer;
-  width: 315px;
 }
-input:hover {
-  border-color: rgb(255, 94, 0);
-}
-button:hover {
-  background-color: rgb(255, 94, 0);
-}
-input {
+.S-button {
+  background: #20df7f;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
   border: none;
-  height: 10%;
-  width: 80%;
-  border-bottom: 1px solid black;
-  font-size: 18px;
+  color: white;
+  height: 45px;
+  width: 17vw;
 }
-input:focus {
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.S-btns {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-.fButton {
-  width: 50%;
-  font-size: 1vw;
-}
-.fDiv {
-  display: flex;
-  flex-direction: row;
+  align-items: center;
   gap: 10px;
 }
-.FBUTTON {
-  font-size: 1vw;
+.s-b {
+  width: 8vw;
+}
+.s-forgot {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  cursor: pointer;
   width: 17vw;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #20df7f;
+}
+.s-s {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.s-checkbox {
+  height: 25px;
+  width: 25px;
 }

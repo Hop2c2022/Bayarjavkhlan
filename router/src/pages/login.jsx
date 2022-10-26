@@ -28,28 +28,37 @@ export const Login = () => {
 
   return (
     <form onSubmit={submit}>
-      <h2>Sign Up</h2>
-      <span>Lets create your account</span>
+      <div className="S-title">Login</div>
+      <div className="S-text">
+        Sign in and start managing your candidates! Good luck!
+      </div>
       <input
         ref={ba}
         placeholder="Your Name here"
         onChange={namechanger}
         type="text"
+        className="S-input"
       />
       <input
         ref={be}
         placeholder="Your Email here"
         onChange={emailchanger}
         type="text"
+        className="S-input"
       />
-      <div className="fDiv">
-        <button className="FBUTTON" type="submit">
-          Register
-        </button>
-        <button className="fButton" onClick={() => bebe()}>
+
+      <button className="S-button" type="submit">
+        Register
+      </button>
+      <div className="s-forgot">
+        <div className="s-s">Remember me</div>
+        <div>Forget password?</div>
+      </div>
+      <div className="S-btns">
+        <button className="S-button s-b" onClick={() => bebe()}>
           Name
         </button>{" "}
-        <button className="fButton" onClick={() => baba()}>
+        <button className="S-button s-b" onClick={() => baba()}>
           Email
         </button>
       </div>

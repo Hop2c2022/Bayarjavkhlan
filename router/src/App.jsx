@@ -5,14 +5,12 @@ import { Login } from "./pages/login";
 import { Home } from "./pages/home";
 function App() {
   return (
-    <div className="app">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />}></Route>
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

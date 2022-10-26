@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  background: url("../../router/public/bk.png");
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  background-repeat: no-repeat;
+  background-size: cover;
   align-items: center;
+  background-position: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.barun {
+  width: 50vw;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  gap: 13vh;
+}
+.bubu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   color: white;
 }
+.suga {
+  width: 50%;
+  font-weight: 400;
 
-.App-link {
-  color: #61dafb;
+  line-height: 56px;
 }
+.title {
+  font-size: 60px;
+}
+.text {
+  font-size: 22.5px;
+  line-height: 163.15%;
+}
+.input {
+  width: 17vw;
+  height: 56px;
+  border: 2px solid #bbc8d4;
+  border-radius: 4px;
+  border: 2px solid black;
+}
+.bunput {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+}
+.btn {
+  width: 8vw;
+  height: 56px;
+  background: #0bbef2;
+  border-radius: 4px;
+  font-size: large;
+  font-weight: bold;
+  color: white;
+  border-radius: 3px;
+  font-size: large;
+  font-weight: bold;
+  border: none;
+  font-size: large;
+  font-weight: bold;
+}
+.zuun {
+  width: 50vw;
+  display: flex;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  color: white;
+  height: 100vh;
+  font-size: 20px;
+  line-height: 28px;
+  padding-top: 3%;
+}
+.baba {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  width: 100%;
+  justify-content: center;
+  height: 5vh;
+  align-items: center;
+}
+.login {
+  color: white;
+  cursor: pointer;
+}
+.get {
+  width: 128px;
+  height: 56px;
+  background: none;
+  border: 2px solid white;
+  color: white;
+  border-radius: 3px;
+  font-size: large;
+  font-weight: bold;
+}
+.get:hover {
+  background: none;
 }
