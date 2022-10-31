@@ -1,13 +1,13 @@
 // import "./App.css";
-
+// import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { Login } from "./pages/login";
-import { Home } from "./pages/home";
+import { Ehbiy } from "./pages/ehbiy";
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Ehbiy />} />
         <Route path="/login" element={<Login />}></Route>
       </Routes>
     </BrowserRouter>

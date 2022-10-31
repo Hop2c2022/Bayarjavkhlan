@@ -28,39 +28,39 @@ export const Login = () => {
 
   return (
     <form onSubmit={submit}>
-      <div className="S-title">Login</div>
-      <div className="S-text">
-        Sign in and start managing your candidates! Good luck!
-      </div>
-      <input
-        ref={ba}
-        placeholder="Your Name here"
-        onChange={namechanger}
-        type="text"
-        className="S-input"
-      />
-      <input
-        ref={be}
-        placeholder="Your Email here"
-        onChange={emailchanger}
-        type="text"
-        className="S-input"
-      />
+      <div className="s-container">
+        <div className="S-title">Login</div>
 
-      <button className="S-button" type="submit">
-        Register
-      </button>
-      <div className="s-forgot">
-        <div className="s-s">Remember me</div>
-        <div>Forget password?</div>
-      </div>
-      <div className="S-btns">
-        <button className="S-button s-b" onClick={() => bebe()}>
-          Name
-        </button>{" "}
-        <button className="S-button s-b" onClick={() => baba()}>
-          Email
+        <input
+          ref={ba}
+          placeholder="Your Name here"
+          onChange={namechanger}
+          type="text"
+          className="S-input"
+        />
+        <input
+          ref={be}
+          placeholder="Your Email here"
+          onChange={emailchanger}
+          type="text"
+          className="S-input"
+        />
+
+        <button className="S-button" type="submit">
+          Register
         </button>
+        <div className="s-forgot">
+          <div className="s-s">Remember me</div>
+          <div>Forget password?</div>
+        </div>
+        <div className="S-btns">
+          <button className="S-button s-b" onClick={() => bebe()}>
+            Name
+          </button>{" "}
+          <button className="S-button s-b" onClick={() => baba()}>
+            Email
+          </button>
+        </div>
       </div>
     </form>
   );

@@ -2,11 +2,6 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "../App.css";
 
 export const Home = () => {
-  const printf = (a) => {
-    console.log(a);
-  };
-
-  printf("asdasd");
   return (
     <div className="container">
       <div className="barun">
