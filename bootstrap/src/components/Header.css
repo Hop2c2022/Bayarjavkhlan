@@ -1,0 +1,6 @@
+.H-bg {
+  background-image: url("../../public/home-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
