@@ -1,12 +1,10 @@
-import { Header } from "../components/Header";
+import { Header, Body } from "../components";
+
 export const Home = () => {
   return (
-    <div
-      style={{
-        height: "100vh",
-      }}
-    >
+    <div>
       <Header />
+      <Body />
     </div>
   );
 };

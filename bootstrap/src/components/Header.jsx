@@ -36,7 +36,7 @@ export const Header = () => {
           </div>
           <div className="d-flex flex-row gap-4 ">
             <input
-              className="w-75"
+              className="w-75 border border-0"
               style={{
                 height: "52px",
                 borderRadius: "5.4px",
@@ -78,7 +78,7 @@ export const Header = () => {
                 }}
                 className="rounded border "
               >
-                Tap and go to Blog
+                Go Blog
               </Button>
             </Link>
           </div>
