@@ -1,5 +1,5 @@
 import { Star } from "./Star";
-import "./Amy.css";
+import "../css/Amy.css";
 import { Photo } from "./photo";
 export const Amy = () => {
   return (
@@ -10,7 +10,7 @@ export const Amy = () => {
             <Star width={"24px"} height={"24px"} />
           ))}
         </div>
-        <span>
+        <span style={{ fontSize: "1rem" }}>
           Give everyone you work with—inside and outside your emoji, keep
           conversations focused in channels, and simplify all your communication
           into one place.

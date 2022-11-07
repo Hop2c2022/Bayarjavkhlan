@@ -1,5 +1,5 @@
-import "./Header.css";
-import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
+import "./../components/css/Header.css";
+import { Head } from "./tool/Head";
 
 import Button from "react-bootstrap/Button";
 export const Header = () => {
@@ -8,7 +8,8 @@ export const Header = () => {
       className="H-bg w-100 d-flex flex-row justify-content-center text-light"
       style={{ height: "100vh" }}
     >
-      <div className=" h-100 d-flex flex-row" style={{ width: "85%" }}>
+      <div className=" h-100 d-flex flex-column " style={{ width: "85%" }}>
+        <Head color={"dark"} path={"./blog"} />
         <div
           style={{ width: "35%" }}
           className=" h-100  d-flex flex-column justify-content-center gap-5 "
@@ -26,7 +27,6 @@ export const Header = () => {
             </div>
             <div
               style={{
-                fontSize: "24.3px",
                 lineHeight: "163.15%",
               }}
             >
@@ -36,7 +36,8 @@ export const Header = () => {
           </div>
           <div className="d-flex flex-row gap-4 ">
             <input
-              className="w-75 border border-0"
+              placeholder="Email"
+              className="w-75 border border-0 p-3"
               style={{
                 height: "52px",
                 borderRadius: "5.4px",
@@ -50,19 +51,15 @@ export const Header = () => {
                 background: "#0BBEF2",
                 borderRadius: "5.4px",
               }}
-              variant
             >
               Get early access
             </Button>
           </div>
         </div>
-        <div
-          style={{ width: "65%" }}
-          className=" h-100 d-flex justify-content-center"
-        >
-          <div
+
+        {/* <div
             className="d-flex flex-row justify-content-center w-100 align-items-center fw-bold "
-            style={{ height: "7%", fontSize: "21.6px", gap: "13%" }}
+            style={{ height: "7%", gap: "13%" }}
           >
             <div>Product</div>
             <div>Services</div>
@@ -81,8 +78,7 @@ export const Header = () => {
                 Go Blog
               </Button>
             </Link>
-          </div>
-        </div>
+          </div> */}
       </div>
     </div>
   );

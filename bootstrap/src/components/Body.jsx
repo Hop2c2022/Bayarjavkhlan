@@ -1,8 +1,7 @@
-import { Amy } from "./Amy";
-import Carousel from "react-bootstrap/Carousel";
+import { Amy } from "./tool/Amy";
 export const Body = () => {
   return (
-    <div className="d-flex flex-column align-items-center">
+    <div className="d-flex flex-column align-items-center overflow-hidden">
       <div className="d-flex flex-column" style={{ width: "85vw" }}>
         <div className="d-flex " style={{ height: "100vh" }}>
           <div
@@ -11,7 +10,7 @@ export const Body = () => {
           >
             <div
               style={{
-                fontWeight: "800",
+                // fontWeight: "800",
                 fontSize: "48px",
                 lineHeight: "60px",
               }}
@@ -20,8 +19,8 @@ export const Body = () => {
             </div>
             <div
               style={{
-                fontWeight: "600",
-                fontSize: "18px",
+                // fontWeight: "600",
+                // fontSize: "18px",
                 lineHeight: "29px",
               }}
             >
@@ -33,8 +32,6 @@ export const Body = () => {
             <div
               style={{
                 color: "#4DA0FD",
-                fontWeight: "600",
-                fontSize: "16px",
                 lineHeight: "29px",
               }}
             >
@@ -50,7 +47,7 @@ export const Body = () => {
             <img
               style={{
                 position: "absolute",
-                transform: "translate(-23vw, -27vh)",
+                transform: "translate(-14vw, -20vh)",
               }}
               src="./meeting2.svg"
               alt=""
@@ -58,7 +55,7 @@ export const Body = () => {
             <img
               style={{
                 position: "absolute",
-                transform: "translate(-27vw, 27vh)",
+                transform: "translate(-18vw, 26vh)",
               }}
               src="./meeting3.png"
               alt=""
@@ -66,7 +63,7 @@ export const Body = () => {
             <img
               style={{
                 position: "absolute",
-                transform: "translate(0vw, -38vh)",
+                transform: "translate(0vw, -32vh)",
               }}
               src="./meeting4.png"
               alt=""
@@ -80,7 +77,7 @@ export const Body = () => {
           >
             <div
               style={{
-                fontWeight: "800",
+                // fontWeight: "800",
                 fontSize: "48px",
                 lineHeight: "60px",
               }}
@@ -89,8 +86,8 @@ export const Body = () => {
             </div>
             <div
               style={{
-                fontWeight: "600",
-                fontSize: "18px",
+                // fontWeight: "600",
+                // fontSize: "18px",
                 lineHeight: "29px",
               }}
             >
@@ -102,8 +99,8 @@ export const Body = () => {
             <div
               style={{
                 color: "#4DA0FD",
-                fontWeight: "600",
-                fontSize: "16px",
+                // fontWeight: "600",
+                // fontSize: "16px",
                 lineHeight: "29px",
               }}
             >
@@ -117,6 +114,16 @@ export const Body = () => {
               src="./simple.png.png"
               alt=""
             />
+            <img
+              style={{ transform: "translate(15vw, -25vh)", width: "15%" }}
+              className="position-absolute "
+              src="./b-0.svg"
+            />
+            <img
+              style={{ transform: "translate(15.3vw, -8vh)", width: "16%" }}
+              className="position-absolute "
+              src="./b-1.svg"
+            />
           </div>
         </div>
         <div className="d-flex " style={{ height: "100vh" }}>
@@ -126,7 +133,7 @@ export const Body = () => {
           >
             <div
               style={{
-                fontWeight: "800",
+                // fontWeight: "800",
                 fontSize: "48px",
                 lineHeight: "60px",
               }}
@@ -135,8 +142,8 @@ export const Body = () => {
             </div>
             <div
               style={{
-                fontWeight: "600",
-                fontSize: "18px",
+                // fontWeight: "600",
+                // fontSize: "18px",
                 lineHeight: "29px",
               }}
             >
@@ -148,8 +155,8 @@ export const Body = () => {
             <div
               style={{
                 color: "#4DA0FD",
-                fontWeight: "600",
-                fontSize: "16px",
+                // fontWeight: "600",
+                // fontSize: "16px",
                 lineHeight: "29px",
               }}
             >
@@ -159,8 +166,14 @@ export const Body = () => {
           <div className="h-100 w-75  d-flex flex-row  justify-content-end align-items-center">
             <img
               className="w-75"
-              //   style={{ transform: "translateX(32vw)" }}
+              style={{ transform: "translateX(8vw)" }}
               src="./scheduling.png"
+              alt=""
+            />
+            <img
+              style={{ transform: "translate(-7vw, -5vh)" }}
+              className="position-absolute w-25"
+              src="./calendar.svg"
               alt=""
             />
           </div>
@@ -173,7 +186,7 @@ export const Body = () => {
         >
           <div
             style={{
-              fontWeight: "800",
+              // fontWeight: "800",
               fontSize: "48px",
               lineHeight: "60px",
             }}
@@ -181,7 +194,7 @@ export const Body = () => {
             What people say about us
           </div>
 
-          <div className="d-flex flex-row w-100 gap-5 overflow-scroll ">
+          <div className="d-flex flex-row w-100 gap-3 overflow-scroll ">
             {[1, 2, 3, 4, 5, 6, 7].map(() => (
               <Amy />
             ))}
