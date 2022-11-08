@@ -1,10 +1,6 @@
 .Jane {
-  margin-top: 50px;
-  width: 363px;
-  height: 440px;
   border-radius: 30px;
   overflow: hidden;
-
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
@@ -14,6 +10,7 @@
   align-items: center;
   background-color: white;
 }
+
 .Photo3 {
   display: flex;
   flex-direction: row;
@@ -38,6 +35,6 @@
   width: 320px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
   gap: 10px;
 }

@@ -12,5 +12,8 @@ code {
     monospace;
 }
 div {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
+}
+span {
+  text-decoration: none;
 }
