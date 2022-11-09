@@ -2,7 +2,7 @@ import { Amy } from "./tool/Amy";
 export const Body = () => {
   return (
     <div className="d-flex flex-column align-items-center overflow-hidden">
-      <div className="d-flex flex-column" style={{ width: "85vw" }}>
+      <div className="d-flex flex-column w-75">
         <div className="d-flex " style={{ height: "100vh" }}>
           <div
             style={{ width: "35%" }}
@@ -10,7 +10,6 @@ export const Body = () => {
           >
             <div
               style={{
-                // fontWeight: "800",
                 fontSize: "48px",
                 lineHeight: "60px",
               }}
@@ -19,8 +18,6 @@ export const Body = () => {
             </div>
             <div
               style={{
-                // fontWeight: "600",
-                // fontSize: "18px",
                 lineHeight: "29px",
               }}
             >
@@ -40,32 +37,8 @@ export const Body = () => {
           </div>
           <div className="h-100 w-75  d-flex flex-row  justify-content-end align-items-center">
             <img
-              style={{ transform: "translateX(32vw)" }}
-              src="./meeting1.png"
-              alt=""
-            />
-            <img
-              style={{
-                position: "absolute",
-                transform: "translate(-14vw, -20vh)",
-              }}
-              src="./meeting2.svg"
-              alt=""
-            />
-            <img
-              style={{
-                position: "absolute",
-                transform: "translate(-18vw, 26vh)",
-              }}
-              src="./meeting3.png"
-              alt=""
-            />
-            <img
-              style={{
-                position: "absolute",
-                transform: "translate(0vw, -32vh)",
-              }}
-              src="./meeting4.png"
+              style={{ transform: "translateX(13vw)" }}
+              src="./meeting1.svg"
               alt=""
             />
           </div>
@@ -110,17 +83,17 @@ export const Body = () => {
           <div className="h-100 w-75  d-flex flex-row  justify-content-start align-items-center">
             <img
               className="w-75"
-              style={{ transform: "translateX(-8vw)" }}
+              style={{ transform: "translateX(-13vw)" }}
               src="./simple.png.png"
               alt=""
             />
             <img
-              style={{ transform: "translate(15vw, -25vh)", width: "15%" }}
+              style={{ transform: "translate(6vw, -25vh)", width: "15%" }}
               className="position-absolute "
               src="./b-0.svg"
             />
             <img
-              style={{ transform: "translate(15.3vw, -8vh)", width: "16%" }}
+              style={{ transform: "translate(6.2vw, -8vh)", width: "16%" }}
               className="position-absolute "
               src="./b-1.svg"
             />
@@ -133,7 +106,6 @@ export const Body = () => {
           >
             <div
               style={{
-                // fontWeight: "800",
                 fontSize: "48px",
                 lineHeight: "60px",
               }}
@@ -142,8 +114,6 @@ export const Body = () => {
             </div>
             <div
               style={{
-                // fontWeight: "600",
-                // fontSize: "18px",
                 lineHeight: "29px",
               }}
             >
@@ -155,8 +125,6 @@ export const Body = () => {
             <div
               style={{
                 color: "#4DA0FD",
-                // fontWeight: "600",
-                // fontSize: "16px",
                 lineHeight: "29px",
               }}
             >
@@ -171,7 +139,7 @@ export const Body = () => {
               alt=""
             />
             <img
-              style={{ transform: "translate(-7vw, -5vh)" }}
+              style={{ transform: "translate(-4vw, -4vh)" }}
               className="position-absolute w-25"
               src="./calendar.svg"
               alt=""
@@ -186,7 +154,6 @@ export const Body = () => {
         >
           <div
             style={{
-              // fontWeight: "800",
               fontSize: "48px",
               lineHeight: "60px",
             }}

@@ -4,17 +4,17 @@ import "../css/Jane.css";
 import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
 export const Jane = () => {
   return (
-    <Link to="./post">
+    <Link style={{ textDecoration: "none" }} to="./post">
       <div
         className="Jane "
         style={{
-          width: "25vw",
+          width: "23vw",
           boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
           cursor: "pointer",
         }}
       >
         <Photo2 />
-        <div className="second">
+        <div className="second ">
           <span className="title">
             Data-Driven Design is Killing Our Instincts
           </span>{" "}

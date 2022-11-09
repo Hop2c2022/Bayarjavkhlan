@@ -8,14 +8,16 @@ export const Head = ({ color, path }) => {
     >
       <div className="w-50">
         <a href="/">
-          <img style={{ width: "8%" }} src="./logo.svg" alt="" />
+          <img style={{ width: "4vw" }} src="/logo.svg" alt="" />
         </a>
       </div>
       <div className="w-50 d-flex flex-row justify-content-around">
         <a>Products</a>
         <a>Services</a>
         <a>Contact</a>
-        <a>Log In</a>
+        <Link style={{ textDecoration: "none", color: "white" }} to="/login">
+          <a>Log In</a>
+        </Link>
         <Link to={path}>
           <Button
             style={{

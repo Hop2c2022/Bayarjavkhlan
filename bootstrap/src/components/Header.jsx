@@ -8,7 +8,7 @@ export const Header = () => {
       className="H-bg w-100 d-flex flex-row justify-content-center text-light"
       style={{ height: "100vh" }}
     >
-      <div className=" h-100 d-flex flex-column " style={{ width: "85%" }}>
+      <div className=" h-100 d-flex flex-column w-75">
         <Head color={"dark"} path={"./blog"} />
         <div
           style={{ width: "35%" }}

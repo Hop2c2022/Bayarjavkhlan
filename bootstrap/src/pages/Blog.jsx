@@ -8,7 +8,7 @@ export const Blog = () => {
       className="d-flex justify-content-center flex-column align-items-center"
       style={{ backgroundColor: "#F5F5F5;" }}
     >
-      <div style={{ width: "80vw" }}>
+      <div className="w-75">
         <Head color={"blue"} />
         <div className="d-flex flex-column">
           <div
