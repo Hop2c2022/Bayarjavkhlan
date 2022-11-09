@@ -52,9 +52,12 @@ form {
   border: none;
   color: black;
   border-radius: 2px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 .S-button {
-  background-color: rgb(209, 32, 62);
+  background-color: rgb(187, 105, 119);
 
   border-radius: 5px;
   border: none;
@@ -73,7 +76,7 @@ form {
 }
 .s-forgot {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 10px;
   line-height: 17px;
   cursor: pointer;
   width: 17vw;
@@ -91,4 +94,7 @@ form {
 .s-checkbox {
   height: 25px;
   width: 25px;
+}
+.link {
+  -webkit-text-stroke: 0.5px white;
 }

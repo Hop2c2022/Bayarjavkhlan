@@ -1,7 +1,10 @@
 import { Amy } from "./tool/Amy";
 export const Body = () => {
   return (
-    <div className="d-flex flex-column align-items-center overflow-hidden">
+    <div
+      style={{ width: "100vw" }}
+      className="d-flex  flex-column align-items-center overflow-hidden"
+    >
       <div className="d-flex flex-column w-75">
         <div className="d-flex " style={{ height: "100vh" }}>
           <div
@@ -50,7 +53,6 @@ export const Body = () => {
           >
             <div
               style={{
-                // fontWeight: "800",
                 fontSize: "48px",
                 lineHeight: "60px",
               }}
@@ -59,8 +61,6 @@ export const Body = () => {
             </div>
             <div
               style={{
-                // fontWeight: "600",
-                // fontSize: "18px",
                 lineHeight: "29px",
               }}
             >
@@ -72,8 +72,6 @@ export const Body = () => {
             <div
               style={{
                 color: "#4DA0FD",
-                // fontWeight: "600",
-                // fontSize: "16px",
                 lineHeight: "29px",
               }}
             >
@@ -86,16 +84,6 @@ export const Body = () => {
               style={{ transform: "translateX(-13vw)" }}
               src="./simple.png.png"
               alt=""
-            />
-            <img
-              style={{ transform: "translate(6vw, -25vh)", width: "15%" }}
-              className="position-absolute "
-              src="./b-0.svg"
-            />
-            <img
-              style={{ transform: "translate(6.2vw, -8vh)", width: "16%" }}
-              className="position-absolute "
-              src="./b-1.svg"
             />
           </div>
         </div>

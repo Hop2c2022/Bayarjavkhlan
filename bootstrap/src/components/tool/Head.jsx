@@ -1,3 +1,4 @@
+import "../css/head.css";
 import { Button } from "react-bootstrap";
 import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
 export const Head = ({ color, path }) => {
@@ -12,11 +13,24 @@ export const Head = ({ color, path }) => {
         </a>
       </div>
       <div className="w-50 d-flex flex-row justify-content-around">
-        <a>Products</a>
-        <a>Services</a>
-        <a>Contact</a>
-        <Link style={{ textDecoration: "none", color: "white" }} to="/login">
-          <a>Log In</a>
+        <a className="a" href="">
+          Products
+        </a>
+        <a className="a" href="">
+          Services
+        </a>
+        <a className="a" href="">
+          Contact
+        </a>
+        <Link
+          className="link"
+          style={{
+            textDecoration: "none",
+            color: "black",
+          }}
+          to="/login"
+        >
+          <div>Log In</div>
         </Link>
         <Link to={path}>
           <Button
@@ -26,7 +40,7 @@ export const Head = ({ color, path }) => {
               backgroundColor: "transparent",
               color: color,
             }}
-            className="rounded border  border-2 border-dark"
+            className="rounded border  border-2 border-dark text-dark a"
           >
             Get access
           </Button>

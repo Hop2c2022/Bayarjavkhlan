@@ -1,4 +1,6 @@
 import React, { useState, useRef } from "react";
+import { Head } from "../components/tool/Head";
+import { Footer } from "../components/Footer";
 import "../components/css/bobo.css";
 export const Login = () => {
   const ba = useRef();
@@ -27,7 +29,14 @@ export const Login = () => {
   console.log(all);
 
   return (
-    <form onSubmit={submit}>
+    <form
+      className="d-flex flex-column justify-content-start "
+      style={{ gap: "100px" }}
+      onSubmit={submit}
+    >
+      <div className="w-75">
+        <Head color={"black"} />
+      </div>
       <div className="s-container">
         <div className="S-title">Login</div>
 

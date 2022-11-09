@@ -5,11 +5,11 @@ import Button from "react-bootstrap/Button";
 export const Header = () => {
   return (
     <div
-      className="H-bg w-100 d-flex flex-row justify-content-center text-light"
-      style={{ height: "100vh" }}
+      className="H-bg d-flex flex-row justify-content-center text-light"
+      style={{ height: "100vh", width: "100vw" }}
     >
       <div className=" h-100 d-flex flex-column w-75">
-        <Head color={"dark"} path={"./blog"} />
+        <Head path={"./blog"} />
         <div
           style={{ width: "35%" }}
           className=" h-100  d-flex flex-column justify-content-center gap-5 "
