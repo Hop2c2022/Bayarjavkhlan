@@ -2,11 +2,15 @@ import { Head } from "../components/tool/Head";
 import { Jane } from "../components/tool/Jane";
 import { Button } from "react-bootstrap";
 import { Footer } from "../components/Footer";
+import { useContext } from "react";
+import { Themecontext } from "../components/Theme";
 export const Blog = () => {
+  const { check } = useContext(Themecontext);
+
   return (
     <div
       className="d-flex justify-content-center flex-column align-items-center"
-      style={{ backgroundColor: "#F5F5F5;" }}
+      style={{ backgroundColor: check == true ? "white" : "black" }}
     >
       <div className="w-75">
         <Head color={"blue"} />
@@ -30,7 +34,7 @@ export const Blog = () => {
             style={{ height: "200vh" }}
           >
             <div className="d-flex flex-row justify-content-between flex-wrap gap-5">
-              {[1, 2, 3, 4, 5, 6, 7, 8, 9].map(() => (
+              {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((el, i) => (
                 <Jane />
               ))}
             </div>

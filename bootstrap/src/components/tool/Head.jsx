@@ -1,7 +1,11 @@
 import "../css/head.css";
 import { Button } from "react-bootstrap";
 import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
+import { useContext } from "react";
+import { Themecontext } from "../Theme";
+
 export const Head = ({ color, path }) => {
+  const { check, themeChecker } = useContext(Themecontext);
   return (
     <div
       className="w-100 d-flex flex-row justify-content-center align-items-center "
@@ -13,6 +17,14 @@ export const Head = ({ color, path }) => {
         </a>
       </div>
       <div className="w-50 d-flex flex-row justify-content-around">
+        <div class="form-check form-switch form-check-reverse">
+          <input
+            onChange={themeChecker}
+            class="form-check-input"
+            type="checkbox"
+            id="flexSwitchCheckReverse"
+          />
+        </div>
         <a className="a" href="">
           Products
         </a>

@@ -8,9 +8,9 @@ export const Photo3 = ({ width, name, date }) => {
           alt=""
         />
       </div>
-      <span style={{ fontSize: "20px", marginLeft: "30px" }}>{name}</span>
+      <span style={{ fontSize: "17px", marginLeft: "30px" }}>{name}</span>
       <span>|</span>
-      <span style={{ fontSize: "20px" }}>{date}</span>
+      <span style={{ fontSize: "17px" }}>{date}</span>
     </div>
   );
 };
