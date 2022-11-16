@@ -17,11 +17,13 @@ export const Info = () => {
   }, []);
   console.log(user.data);
   return (
-    <div>
+    <div className="d-flex flex-row" style={{ width: "100vw" }}>
       {user?.data?.map((el) => {
         return (
-          <div className="w-25">
-            <img src={el.picture} alt="" />
+          <div style={{ width: "25vw" }}>
+            <div className="w-100">
+              <img className="w-25" src={el.picture} alt="" />
+            </div>
             <div>First name: {el.firstName} </div>
             <div>Last name: {el.lastName} </div>
             <div> id: {el.id}</div>
