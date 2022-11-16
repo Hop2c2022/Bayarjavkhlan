@@ -1,9 +1,18 @@
 import { Head } from "../components/tool/Head";
 import { Photo3 } from "../components/tool/photo3";
 import { Footer } from "../components/Footer";
+import { useContext } from "react";
+import { Themecontext } from "../components/Theme";
 export const Post = () => {
+  const { check } = useContext(Themecontext);
   return (
-    <div className="d-flex align-items-center flex-column">
+    <div
+      className="d-flex align-items-center flex-column"
+      style={{
+        backgroundColor: check == true ? "white" : "black",
+        color: check == true ? "black" : "white",
+      }}
+    >
       <div className="w-75 d-flex align-items-center flex-column">
         <Head color={"black"}></Head>
         <div className=" w-50">

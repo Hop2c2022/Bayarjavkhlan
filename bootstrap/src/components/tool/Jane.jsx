@@ -15,16 +15,19 @@ export const Jane = () => {
           boxShadow:
             check == true
               ? "rgba(0, 0, 0, 0.24) 0px 3px 8px"
-              : "white 0px 3px 8px",
+              : "grey 0px 8px 24px",
           cursor: "pointer",
-          backgroundColor: check == true ? "white" : "black",
+          backgroundColor: check == true ? "white" : "#212529",
         }}
       >
         <Photo2 />
-        <div className="second ">
+        <div
+          className="second d-flex w-75  "
+          style={{ color: check == true ? "#212529" : "white" }}
+        >
           <span className="title">
             Data-Driven Design is Killing Our Instincts
-          </span>{" "}
+          </span>
           <br />
           <span style={{ fontSize: "20px" }}>
             Our latest updates and blogs about managing <br /> your team <br />{" "}

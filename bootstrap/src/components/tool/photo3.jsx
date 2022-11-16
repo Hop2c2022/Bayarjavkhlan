@@ -4,7 +4,7 @@ export const Photo3 = ({ width, name, date }) => {
       <div className="photo-bb">
         <img
           width={width}
-          src="https://scontent.fuln1-2.fna.fbcdn.net/v/t39.30808-6/277993800_160763889652449_3931467693324004403_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_ohc=e5cQ4uNPPiEAX_DyHcq&_nc_ht=scontent.fuln1-2.fna&oh=00_AfAG17caJG4ET72CWSZGVHcGARvl_VZcwoSuuQd16akXcg&oe=636FA3DA"
+          src="https://scontent.fuln2-2.fna.fbcdn.net/v/t39.30808-6/313417576_200688575659980_7512542520687818566_n.jpg?stp=cp6_dst-jpg&_nc_cat=109&ccb=1-7&_nc_sid=174925&_nc_eui2=AeGh4sQ6nF7PARAnOKlxkixTcvGsMPmfgIty8aww-Z-Ai3p8HlXxVA8H0ShNkSfUAAhXXawcO65Qxnth9zboRGb9&_nc_ohc=8gdPQUx-vF4AX-KvsOX&_nc_ht=scontent.fuln2-2.fna&oh=00_AfCv8JQuQRb00FGd26woeh85m_7UiltV6mMmpP3GMOLY3g&oe=637A7195"
           alt=""
         />
       </div>

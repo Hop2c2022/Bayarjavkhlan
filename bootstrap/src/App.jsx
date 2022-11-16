@@ -1,8 +1,8 @@
-import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { Home, Blog, Post, Login } from "./pages";
-import { Head } from "./components/tool/Head";
 import { ThemeComponent } from "./components/Theme";
 import { Jane } from "./components/tool/Jane";
+import { Info } from "./pages/Info";
 const App = () => {
   return (
     <ThemeComponent>
@@ -13,6 +13,7 @@ const App = () => {
           <Route path="/blog/post" element={<Post />}></Route>
           <Route path="/login" element={<Login />}></Route>
           <Route element={<Jane />}></Route>
+          <Route path="/info" element={<Info />}></Route>
         </Routes>
       </BrowserRouter>
     </ThemeComponent>

@@ -25,9 +25,18 @@ export const Head = ({ color, path }) => {
             id="flexSwitchCheckReverse"
           />
         </div>
-        <a className="a" href="">
-          Products
-        </a>
+        <Link
+          className="link"
+          style={{
+            textDecoration: "none",
+            color: "black",
+          }}
+          to="/info"
+        >
+          <a className="a" href="">
+            Infos
+          </a>
+        </Link>
         <a className="a" href="">
           Services
         </a>
@@ -50,7 +59,7 @@ export const Head = ({ color, path }) => {
               fontSize: "21.6px",
               fontWeight: "bold",
               backgroundColor: "transparent",
-              color: color,
+              color: "black",
             }}
             className="rounded border  border-2 border-dark text-dark a"
           >

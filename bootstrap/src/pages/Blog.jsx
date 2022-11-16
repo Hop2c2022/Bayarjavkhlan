@@ -10,14 +10,21 @@ export const Blog = () => {
   return (
     <div
       className="d-flex justify-content-center flex-column align-items-center"
-      style={{ backgroundColor: check == true ? "white" : "black" }}
+      style={{
+        backgroundColor: check == true ? "white" : "black",
+      }}
     >
       <div className="w-75">
-        <Head color={"blue"} />
+        <Head />
         <div className="d-flex flex-column">
           <div
             className="d-flex flex-column justify-content-end "
-            style={{ height: "20vh", fonWeight: "800", fontSize: "48px" }}
+            style={{
+              height: "20vh",
+              fonWeight: "800",
+              fontSize: "48px",
+              color: check == true ? "#212529" : "white",
+            }}
           >
             <div
               className="fw-bold"
