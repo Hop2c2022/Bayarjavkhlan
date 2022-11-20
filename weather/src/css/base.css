@@ -1,7 +1,28 @@
-.container{
-    background-image: url("https://wallpapercave.com/wp/wp4676582.jpg");
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
+.container {
+  background-image: url("https://images.pexels.com/photos/910213/pexels-photo-910213.jpeg?cs=srgb&dl=pexels-jayant-kulkarni-910213.jpg&fm=jpg");
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+.font {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.temp {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  width: 100%;
+  /* color: ; */
 }
