@@ -4,12 +4,15 @@ import {} from "./css/base.css";
 
 const App = () => {
   const [info, setInfo] = useState("");
+  const instance = axios.create({
+    baseURL:
+      "https://cors-anywhere.herokuapp.com/" +
+      "https://api.darksky.net/forecast/81d38b9c958eb018e01083a72b0926b5/46.8625,103.8467",
+    timeout: 2000,
+  });
   useEffect(() => {
     const dataAvagc = async () => {
-      const result = await axios.get(
-        "https://cors-anywhere.herokuapp.com/" +
-          "https://api.darksky.net/forecast/81d38b9c958eb018e01083a72b0926b5/46.8625,103.8467"
-      );
+      const result = await instance.get();
       setInfo(result.data);
     };
     dataAvagc();
@@ -26,9 +29,6 @@ const App = () => {
   };
   return (
     <div className="container">
-      {/* <div>{info.timezone}</div>
-      <div>{info?.currently?.temperature}+°C</div>
-      <div>{info?.currently?.summary}</div> */}
       <div
         style={{
           width: "30vw",
@@ -38,7 +38,7 @@ const App = () => {
           boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
         }}
       >
-        <div className="main ">
+        <div className="main " style={{ height: "400px" }}>
           <div
             className="font"
             style={{
@@ -46,16 +46,43 @@ const App = () => {
               width: "100%",
               color: "white",
               textAlign: "center",
+              height: "30%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
             }}
           >
             {info.timezone}
           </div>
-          <div className="font temp">
-            <div>{Math.trunc(faranheit(info?.currently?.temperature))}°C</div>
-            <div>{info?.currently?.summary}</div>
-          </div>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              height: "70%",
+              width: "100%",
+            }}
+          >
+            <div className="font temp">
+              <div>{Math.trunc(faranheit(info?.currently?.temperature))}°C</div>
+              <div>{info?.currently?.summary}</div>
+            </div>
 
-          <div className="font"> {timer(info?.currently?.time)}</div>
+            <div
+              style={{
+                fontSize: "4.5rem",
+                height: "40%",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+              className="font"
+            >
+              {" "}
+              {timer(info?.currently?.time)}
+            </div>
+          </div>
         </div>
       </div>
     </div>
